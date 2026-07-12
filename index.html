@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibe-Z – Own Your Audience. Monetize Your Passion.</title>
+  <meta name="description" content="Build your community, share exclusive content, and earn directly from your fans. No middlemen, just you and your supporters. Join the Vibe-Z waitlist today.">
+  <meta name="keywords" content="creator platform, content monetization, creator economy, subscription platform, fan engagement">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== HOW IT WORKS VIDEO MODAL ===== -->
+  <div id="how-it-works-modal" class="modal-backdrop" onclick="closeHowItWorks()">
+    <div class="hiw-modal-box" onclick="event.stopPropagation()">
+      <button class="hiw-close" onclick="closeHowItWorks()"><i class="ri-close-line"></i></button>
+      <video id="hiw-video" class="hiw-video" controls autoplay>
+        <source src="YOUR_VIDEO_URL_HERE.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="hiw-caption">
+        <div>
+          <p class="hiw-title">How Vibe-Z Works</p>
+          <p class="hiw-sub">See how creators earn directly from their fans</p>
+        </div>
+        <button class="btn-pill-sm" onclick="closeHowItWorks(); scrollToWaitlist();">Join Waitlist</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== STARTUP BANNER ===== -->
+  <div class="startup-banner">
+    <i class="ri-rocket-line"></i>
+    <span class="banner-main">We're building the future of creator monetization!</span>
+    <span class="sep hide-sm">•</span>
+    <span class="hide-sm">Your support helps us grow 💜</span>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="https://public.readdy.ai/ai/img_res/28f622dd-215d-431d-8f03-9f76adf8a1b8.png" alt="Vibe-Z Logo">
+      </a>
+      <div class="nav-actions">
+        <button class="btn-ghost-sm">Login</button>
+        <button class="btn-pill-sm" onclick="scrollToWaitlist()">Sign Up <i class="ri-arrow-right-line"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg-gradient"></div>
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <div class="badge-pill">
+          <span class="pulse-dot"></span>
+          🚀 Early Startup • Join Our Journey
+        </div>
+        <h1>Own Your<br>Audience.<br><span class="grad-text">Monetize Your Passion.</span></h1>
+        <p class="hero-desc">Build your community, share exclusive content, and earn directly from your fans. No middlemen, just you and your supporters.</p>
+        <div class="hero-btns">
+          <button class="btn-primary-lg" onclick="scrollToWaitlist()">Start Earning Free</button>
+          <button class="btn-ghost-lg" onclick="openHowItWorks()">How It Works <i class="ri-arrow-right-line"></i></button>
+        </div>
+        <div class="social-proof">
+          <div class="avatars">
+            <div class="av"><i class="ri-user-line"></i></div>
+            <div class="av"><i class="ri-user-line"></i></div>
+            <div class="av"><i class="ri-user-line"></i></div>
+            <div class="av"><i class="ri-user-line"></i></div>
+            <div class="av"><i class="ri-user-line"></i></div>
+          </div>
+          <p><strong>Earn your potential</strong> — Real Followers, Real People, <strong>Real Earning</strong></p>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="video-card">
+          <div class="slide-wrap" id="slideshow">
+            <div class="slide active" data-subs="12.5K" data-earn="$8.2K/mo">
+              <img src="https://readdy.ai/api/search-image?query=Professional%20fitness%20coach%20woman%20in%20modern%20gym%20doing%20workout%20demonstration%2C%20athletic%20wear%2C%20energetic%20confident%20pose%2C%20clean%20minimal%20background%20with%20warm%20coral%20and%20peach%20gradient%20tones%2C%20high%20quality%20fitness%20photography%2C%20professional%20studio%20lighting%2C%20inspiring%20workout%20scene&width=600&height=800&seq=slide1&orientation=portrait" alt="Sarah Chen">
+              <div class="slide-overlay"></div>
+              <span class="slide-tag">FITNESS</span>
+              <div class="slide-info">
+                <div class="creator-row">
+                  <div class="creator-av"><i class="ri-user-line"></i></div>
+                  <div><h3>Sarah Chen</h3><p>Fitness Coach</p></div>
+                </div>
+                <p class="slide-quote">"I tripled my income in 6 months"</p>
+                <div class="slide-stats">
+                  <span><i class="ri-money-dollar-circle-line" style="color:#4ade80"></i> $8.2K/mo</span>
+                  <span><i class="ri-user-follow-line" style="color:#d8b4fe"></i> 12.5K</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide" data-subs="8.3K" data-earn="$5.9K/mo">
+              <img src="https://readdy.ai/api/search-image?query=Professional%20music%20producer%20man%20in%20recording%20studio%20with%20headphones%20and%20mixing%20equipment%2C%20creative%20workspace%20with%20colorful%20audio%20visualizers%2C%20clean%20minimal%20background%20with%20rich%20amber%20and%20gold%20gradient%20tones%2C%20high%20quality%20studio%20photography%2C%20professional%20lighting%2C%20inspiring%20music%20production%20scene&width=600&height=800&seq=slide2&orientation=portrait" alt="Marcus Rivera">
+              <div class="slide-overlay"></div>
+              <span class="slide-tag">MUSIC</span>
+              <div class="slide-info">
+                <div class="creator-row">
+                  <div class="creator-av"><i class="ri-user-line"></i></div>
+                  <div><h3>Marcus Rivera</h3><p>Music Producer</p></div>
+                </div>
+                <p class="slide-quote">"Finally earning from my passion"</p>
+                <div class="slide-stats">
+                  <span><i class="ri-money-dollar-circle-line" style="color:#4ade80"></i> $5.9K/mo</span>
+                  <span><i class="ri-user-follow-line" style="color:#d8b4fe"></i> 8.3K</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide" data-subs="15.2K" data-earn="$11.4K/mo">
+              <img src="https://readdy.ai/api/search-image?query=Professional%20digital%20artist%20woman%20working%20on%20tablet%20with%20stylus%20creating%20colorful%20artwork%2C%20creative%20studio%20space%20with%20art%20displays%2C%20clean%20minimal%20background%20with%20soft%20teal%20and%20mint%20gradient%20tones%2C%20high%20quality%20creative%20photography%2C%20professional%20lighting%2C%20inspiring%20artistic%20scene&width=600&height=800&seq=slide3&orientation=portrait" alt="Emma Thompson">
+              <div class="slide-overlay"></div>
+              <span class="slide-tag">ART</span>
+              <div class="slide-info">
+                <div class="creator-row">
+                  <div class="creator-av"><i class="ri-user-line"></i></div>
+                  <div><h3>Emma Thompson</h3><p>Digital Artist</p></div>
+                </div>
+                <p class="slide-quote">"My art now supports my lifestyle"</p>
+                <div class="slide-stats">
+                  <span><i class="ri-money-dollar-circle-line" style="color:#4ade80"></i> $11.4K/mo</span>
+                  <span><i class="ri-user-follow-line" style="color:#d8b4fe"></i> 15.2K</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide" data-subs="21.3K" data-earn="$9.7K/mo">
+              <img src="https://readdy.ai/api/search-image?query=Young%20lifestyle%20content%20creator%20in%20a%20bright%20modern%20apartment%20with%20natural%20light%2C%20casual%20stylish%20outfit%2C%20relaxed%20confident%20smile%2C%20clean%20minimal%20background%20with%20soft%20rose%20and%20lavender%20gradient%20tones%2C%20high%20quality%20lifestyle%20photography%2C%20professional%20studio%20lighting%2C%20inspiring%20creative%20scene&width=600&height=800&seq=slide4&orientation=portrait" alt="Jordan Kim">
+              <div class="slide-overlay"></div>
+              <span class="slide-tag">LIFESTYLE</span>
+              <div class="slide-info">
+                <div class="creator-row">
+                  <div class="creator-av"><i class="ri-user-line"></i></div>
+                  <div><h3>Jordan Kim</h3><p>Lifestyle Creator</p></div>
+                </div>
+                <p class="slide-quote">"Built my dream life creating content"</p>
+                <div class="slide-stats">
+                  <span><i class="ri-money-dollar-circle-line" style="color:#4ade80"></i> $9.7K/mo</span>
+                  <span><i class="ri-user-follow-line" style="color:#d8b4fe"></i> 21.3K</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-arrow left" onclick="prevSlide()"><i class="ri-arrow-left-s-line"></i></button>
+          <button class="carousel-arrow right" onclick="nextSlide()"><i class="ri-arrow-right-s-line"></i></button>
+          <div class="carousel-dots" id="carousel-dots">
+            <button class="dot active" onclick="goToSlide(0)"></button>
+            <button class="dot" onclick="goToSlide(1)"></button>
+            <button class="dot" onclick="goToSlide(2)"></button>
+            <button class="dot" onclick="goToSlide(3)"></button>
+          </div>
+          <div class="stats-bar">
+            <div><div class="sv grad-text" id="stat-subs">12.5K</div><div class="sl">Subscribers</div></div>
+            <div><div class="sv grad-text" id="stat-earn">$8.2K/mo</div><div class="sl">Monthly</div></div>
+            <div><div class="sv grad-text">94%</div><div class="sl">Revenue Share</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAN SUPPORT SHOWCASE ===== -->
+  <section class="fan-showcase" id="fan-showcase">
+    <div class="lavender-blob"></div>
+    <div class="container fan-grid">
+      <div class="fan-cards-col">
+        <div class="fan-card" data-delay="0">
+          <div class="fan-av">
+            <img src="https://readdy.ai/api/search-image?query=Young%20man%20casual%20portrait%20with%20short%20dark%20hair%2C%20friendly%20smile%2C%20neutral%20light%20gray%20background%2C%20clean%20headshot%20photo%2C%20realistic%20professional%20portrait%20photography%2C%20soft%20studio%20lighting%2C%20modern%20casual%20style&width=100&height=100&seq=fancard1&orientation=squarish" alt="Lostsouls3">
+          </div>
+          <div class="fan-card-body">
+            <div class="fan-card-top">
+              <span class="fan-name">Lostsouls3</span>
+              <span class="fan-amount">$60</span>
+              <span class="fan-dot"></span>
+            </div>
+            <div class="fan-card-meta"><i class="ri-message-2-line"></i><span>Hello there I was...</span></div>
+            <div class="fan-time">5 days ago</div>
+          </div>
+        </div>
+        <div class="fan-card fan-card-offset" data-delay="130">
+          <div class="fan-av">
+            <img src="https://readdy.ai/api/search-image?query=Middle%20aged%20man%20professional%20portrait%2C%20grey%20hair%2C%20warm%20smile%2C%20neutral%20white%20background%2C%20clean%20corporate%20headshot%20photo%2C%20realistic%20studio%20photography%2C%20soft%20lighting%2C%20business%20casual%20appearance%2C%20approachable%20expression&width=100&height=100&seq=fancard2&orientation=squarish" alt="Georges53">
+          </div>
+          <div class="fan-card-body">
+            <div class="fan-card-top">
+              <span class="fan-name">Georges53</span>
+              <span class="fan-amount">$100</span>
+              <span class="fan-dot"></span>
+            </div>
+            <div class="fan-card-meta"><i class="ri-gift-line"></i><span>💰 Paid $100 tip...</span></div>
+            <div class="fan-time">5 days ago</div>
+          </div>
+        </div>
+        <div class="fan-card" data-delay="260">
+          <div class="fan-av">
+            <img src="https://readdy.ai/api/search-image?query=Young%20woman%20portrait%20with%20blonde%20hair%2C%20casual%20friendly%20smile%2C%20neutral%20light%20background%2C%20clean%20lifestyle%20headshot%20photo%2C%20realistic%20photography%2C%20soft%20natural%20lighting%2C%20approachable%20and%20warm%20expression%2C%20modern%20style&width=100&height=100&seq=fancard3&orientation=squarish" alt="Megme9">
+          </div>
+          <div class="fan-card-body">
+            <div class="fan-card-top">
+              <span class="fan-name">Megme9___</span>
+              <span class="fan-amount">$10</span>
+              <span class="fan-dot"></span>
+            </div>
+            <div class="fan-card-meta"><i class="ri-lock-line"></i><span>💰 Unlocked Content...</span></div>
+            <div class="fan-time">5 days ago</div>
+          </div>
+        </div>
+      </div>
+      <div class="fan-text-col">
+        <h2 class="fan-heading">ALLOW YOUR FANS TO SUPPORT YOUR WORK</h2>
+        <h3 class="fan-gradient-heading">MONETIZE YOUR DM'S &amp; YOUR CONTENT WITH FAN SUBSCRIPTIONS</h3>
+        <img src="https://public.readdy.ai/ai/img_res/28f622dd-215d-431d-8f03-9f76adf8a1b8.png" alt="Vibe-Z" class="fan-logo">
+      </div>
+    </div>
+    <div class="fan-unicorn">🦄</div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container hiw-inner">
+      <div class="section-center hiw-header">
+        <div class="badge-pulse">
+          <span class="pulse-dot-sm"></span>
+          <span class="badge-pulse-text">Simple Process</span>
+        </div>
+        <h2>Start Earning in <span class="grad-text">4 Steps</span></h2>
+        <p>No technical skills needed. Set up your creator page and start earning from your fans today.</p>
+      </div>
+
+      <div class="hiw-steps-wrap">
+        <div class="hiw-connector"></div>
+        <div class="hiw-steps">
+          <div class="hiw-step">
+            <div class="hiw-step-num-wrap">
+              <div class="hiw-step-num" data-target="1"><span class="hiw-count">0</span></div>
+              <div class="hiw-step-pulse"></div>
+            </div>
+            <div class="hiw-step-icon bg-purple-g"><i class="ri-user-star-line"></i></div>
+            <h3>Create Your Profile</h3>
+            <p>Set up your creator page in minutes. Add your bio, profile photo, and customise your branding.</p>
+          </div>
+          <div class="hiw-step">
+            <div class="hiw-step-num-wrap">
+              <div class="hiw-step-num bg-pink-g" data-target="2"><span class="hiw-count">0</span></div>
+              <div class="hiw-step-pulse"></div>
+            </div>
+            <div class="hiw-step-icon bg-pink-g"><i class="ri-upload-cloud-2-line"></i></div>
+            <h3>Share Your Content</h3>
+            <p>Post videos, photos, audio, or written content. Decide what's free and what's subscriber-only.</p>
+          </div>
+          <div class="hiw-step">
+            <div class="hiw-step-num-wrap">
+              <div class="hiw-step-num bg-rose-orange" data-target="3"><span class="hiw-count">0</span></div>
+              <div class="hiw-step-pulse"></div>
+            </div>
+            <div class="hiw-step-icon bg-rose-orange"><i class="ri-group-2-line"></i></div>
+            <h3>Grow Your Audience</h3>
+            <p>Fans subscribe, tip, and unlock exclusive content. Build a loyal community around your passion.</p>
+          </div>
+          <div class="hiw-step">
+            <div class="hiw-step-num-wrap">
+              <div class="hiw-step-num bg-orange-amber" data-target="4"><span class="hiw-count">0</span></div>
+              <div class="hiw-step-pulse"></div>
+            </div>
+            <div class="hiw-step-icon bg-orange-amber"><i class="ri-money-dollar-circle-line"></i></div>
+            <h3>Get Paid — 94%</h3>
+            <p>Receive payouts directly. Founding creators keep 94% of every dollar their fans spend. No surprises.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hiw-cta">
+        <button class="btn-primary-lg" onclick="scrollToWaitlist()"><i class="ri-rocket-line"></i> Get Started Free</button>
+        <p class="hiw-cta-note">No credit card needed &nbsp;·&nbsp; Setup in under 5 minutes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PWA INSTALL VIDEO ===== -->
+  <section class="pwa-section" id="pwa-section">
+    <div class="container pwa-inner">
+      <div class="section-center">
+        <div class="badge-purple-pill"><i class="ri-smartphone-line"></i> Install in Seconds</div>
+        <h2>Get the App on Your Phone</h2>
+        <p>No app store needed. Install Vibe-Z directly to your home screen as a Progressive Web App.</p>
+      </div>
+
+      <div class="pwa-video-wrap">
+        <div class="pwa-video-box" id="pwa-video-box">
+          <div class="pwa-poster" id="pwa-poster">
+            <img src="https://readdy.ai/api/search-image?query=Person%20holding%20modern%20smartphone%20showing%20app%20installation%20screen%20with%20add%20to%20home%20screen%20button%20visible%2C%20close%20up%20of%20hand%20and%20phone%2C%20soft%20purple%20and%20pink%20gradient%20background%20blur%2C%20clean%20minimal%20product%20photography%20style%2C%20warm%20lighting%2C%20tutorial%20screenshot%20style%2C%20professional%20tech%20lifestyle%20photo&width=1280&height=720&seq=pwa-install-poster&orientation=landscape" alt="How to install Vibe-Z on your phone">
+            <div class="pwa-play-overlay">
+              <button class="pwa-play-btn" onclick="playPwaVideo()" aria-label="Play video">
+                <i class="ri-play-fill"></i>
+              </button>
+            </div>
+          </div>
+          <video id="pwa-video" class="pwa-video-el" controls poster="https://readdy.ai/api/search-image?query=Person%20holding%20modern%20smartphone%20showing%20app%20installation%20screen%20with%20add%20to%20home%20screen%20button%20visible%2C%20close%20up%20of%20hand%20and%20phone%2C%20soft%20purple%20and%20pink%20gradient%20background%20blur%2C%20clean%20minimal%20product%20photography%20style%2C%20warm%20lighting%2C%20tutorial%20screenshot%20style%2C%20professional%20tech%20lifestyle%20photo&width=1280&height=720&seq=pwa-install-poster&orientation=landscape">
+            <source src="YOUR_PWA_VIDEO_URL_HERE.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div class="pwa-steps-grid">
+        <div class="pwa-step-card">
+          <div class="pwa-step-header">
+            <div class="pwa-step-icon-wrap bg-black"><i class="ri-apple-fill"></i></div>
+            <h3>iPhone &amp; iPad</h3>
+          </div>
+          <ol class="pwa-step-list">
+            <li><span class="pwa-step-num-sm">1.</span> Tap the Share button in Safari</li>
+            <li><span class="pwa-step-num-sm">2.</span> Scroll down and tap "Add to Home Screen"</li>
+            <li><span class="pwa-step-num-sm">3.</span> Tap "Add" — you're done!</li>
+          </ol>
+        </div>
+        <div class="pwa-step-card">
+          <div class="pwa-step-header">
+            <div class="pwa-step-icon-wrap bg-green"><i class="ri-android-fill"></i></div>
+            <h3>Android</h3>
+          </div>
+          <ol class="pwa-step-list">
+            <li><span class="pwa-step-num-sm">1.</span> Tap the menu (⋮) in Chrome</li>
+            <li><span class="pwa-step-num-sm">2.</span> Tap "Add to Home screen" or "Install app"</li>
+            <li><span class="pwa-step-num-sm">3.</span> Tap "Install" — you're done!</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PLATFORM CREATOR TYPES ===== -->
+  <section class="platform-creators" id="platform-creators">
+    <div class="container pc-inner">
+      <div class="pc-top-row">
+        <div class="pc-phone-col">
+          <div class="pc-phone">
+            <div class="pc-phone-inner">
+              <img src="https://readdy.ai/api/search-image?query=Young%20confident%20man%20sitting%20casually%20in%20a%20modern%20lounge%20room%20with%20pool%20table%20in%20background%2C%20speaking%20to%20camera%2C%20casual%20gray%20t-shirt%2C%20relaxed%20pose%20with%20hands%20gesturing%2C%20warm%20indoor%20lighting%2C%20cinematic%20vertical%20video%20frame%2C%20realistic%20candid%20content%20creator%20style%2C%20natural%20authentic%20atmosphere&width=540&height=960&seq=platform-hero-vid&orientation=portrait" alt="Creator video">
+              <div class="pc-phone-overlay"></div>
+              <button class="pc-phone-play" onclick="togglePhonePlay(this)" aria-label="Play">
+                <div class="pc-play-circle"><i class="ri-play-fill"></i></div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="pc-words-col">
+          <div class="pc-creator-words">
+            <span class="pc-word pc-word-1">CREATORS</span>
+            <span class="pc-word pc-word-2">ARTISTS</span>
+            <span class="pc-word pc-word-3">GAMERS</span>
+            <span class="pc-word pc-word-4">STREAMERS</span>
+            <span class="pc-word pc-word-5">COSPLAYERS</span>
+            <span class="pc-word pc-word-6">MODELS</span>
+            <span class="pc-word pc-word-7">COMEDIANS</span>
+            <span class="pc-word pc-word-8">YOUTUBERS</span>
+          </div>
+          <p class="pc-desc">We're building for passionate creators across every niche. If you create content and want to monetize your passion, you belong here.</p>
+          <button class="pc-cta-btn" onclick="scrollToWaitlist()">GET STARTED (FREE)</button>
+        </div>
+      </div>
+
+      <div class="pc-divider"></div>
+
+      <div class="pc-niches-header">
+        <div class="badge-purple-pill">Who We're Building For</div>
+        <h2>Creators We're Looking For</h2>
+      </div>
+      <div class="pc-niches-grid">
+        <div class="pc-niche-card">
+          <div class="pc-niche-icon bg-red-pink"><i class="ri-video-line"></i></div>
+          <h3>Video Creators</h3>
+          <p>YouTubers, TikTokers, vloggers, and video content producers</p>
+          <div class="pc-niche-examples">Tutorials, vlogs, reviews, entertainment</div>
+        </div>
+        <div class="pc-niche-card">
+          <div class="pc-niche-icon bg-purple-indigo"><i class="ri-music-line"></i></div>
+          <h3>Artists &amp; Musicians</h3>
+          <p>Digital artists, illustrators, musicians, and performers</p>
+          <div class="pc-niche-examples">Art, music, performances, behind-the-scenes</div>
+        </div>
+        <div class="pc-niche-card">
+          <div class="pc-niche-icon bg-orange-amber"><i class="ri-book-open-line"></i></div>
+          <h3>Educators &amp; Coaches</h3>
+          <p>Teachers, fitness coaches, life coaches, and mentors</p>
+          <div class="pc-niche-examples">Courses, coaching, workshops, guidance</div>
+        </div>
+        <div class="pc-niche-card">
+          <div class="pc-niche-icon bg-green-teal"><i class="ri-gamepad-line"></i></div>
+          <h3>Gamers &amp; Streamers</h3>
+          <p>Gaming content creators, streamers, and esports personalities</p>
+          <div class="pc-niche-examples">Gameplay, streams, tips, community</div>
+        </div>
+        <div class="pc-niche-card">
+          <div class="pc-niche-icon bg-blue-cyan"><i class="ri-quill-pen-line"></i></div>
+          <h3>Writers &amp; Bloggers</h3>
+          <p>Authors, journalists, bloggers, and storytellers</p>
+          <div class="pc-niche-examples">Articles, stories, newsletters, essays</div>
+        </div>
+        <div class="pc-niche-card">
+          <div class="pc-niche-icon bg-pink-rose"><i class="ri-camera-line"></i></div>
+          <h3>Photographers</h3>
+          <p>Professional and hobbyist photographers sharing their work</p>
+          <div class="pc-niche-examples">Photos, presets, tutorials, portfolios</div>
+        </div>
+        <div class="pc-niche-card">
+          <div class="pc-niche-icon bg-amber-orange"><i class="ri-restaurant-line"></i></div>
+          <h3>Food &amp; Lifestyle</h3>
+          <p>Chefs, food bloggers, lifestyle influencers, and wellness creators</p>
+          <div class="pc-niche-examples">Recipes, lifestyle tips, wellness content</div>
+        </div>
+        <div class="pc-niche-card">
+          <div class="pc-niche-icon bg-teal-emerald"><i class="ri-lightbulb-line"></i></div>
+          <h3>Entrepreneurs</h3>
+          <p>Business owners, consultants, and thought leaders</p>
+          <div class="pc-niche-examples">Business tips, consulting, expertise sharing</div>
+        </div>
+      </div>
+      <div class="pc-niches-footer">
+        <p>Don't see your niche? <strong>We welcome all creators!</strong></p>
+        <button class="btn-primary-lg" onclick="scrollToWaitlist()">Join as Creator</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REAL CREATORS ===== -->
+  <section class="real-creators">
+    <div class="container">
+      <div class="section-center">
+        <div class="badge-grad"><i class="ri-shield-check-line"></i> Our Commitment</div>
+        <h2>Real Creators.<br>Real Content.<br><span class="grad-text">Real Connections.</span></h2>
+        <p>We're building a platform for <strong>authentic creators</strong> who create <strong>genuine content</strong>. No filters, no AI-generated content, no fake personas. Just real people sharing their real passions.</p>
+      </div>
+      <div class="cards-3">
+        <div class="card-white border-purple">
+          <div class="card-icon bg-purple-g"><i class="ri-user-heart-line"></i></div>
+          <h3>100% Human Created</h3>
+          <p>Every piece of content on our platform is created by real people. We don't allow AI-generated content or automated posts. Your audience deserves authenticity.</p>
+        </div>
+        <div class="card-white border-pink">
+          <div class="card-icon bg-pink-g"><i class="ri-camera-off-line"></i></div>
+          <h3>No Fake Filters</h3>
+          <p>We celebrate real beauty and authenticity. Share your true self without pressure to use heavy filters or unrealistic editing. Be you, unapologetically.</p>
+        </div>
+        <div class="card-white border-orange">
+          <div class="card-icon bg-orange-g"><i class="ri-heart-3-line"></i></div>
+          <h3>Genuine Connections</h3>
+          <p>Build real relationships with your audience. No bots, no fake followers, no inflated numbers. Just authentic fans who truly care about your content.</p>
+        </div>
+      </div>
+      <!-- Our Promise block -->
+      <div class="brand-banner">
+        <div class="brand-grid-bg"></div>
+        <div class="dark-inner">
+          <div class="badge-outline-white"><i class="ri-verified-badge-line"></i> Our Promise</div>
+          <h3>We Verify Every Creator</h3>
+          <p>To maintain authenticity, we manually review every creator application. We're committed to keeping this platform a space for <strong>real people creating real content</strong>. No spam, no bots, no fake accounts.</p>
+          <div class="check-list">
+            <span><i class="ri-checkbox-circle-fill" style="color:#4ade80"></i> Manual verification</span>
+            <span><i class="ri-checkbox-circle-fill" style="color:#4ade80"></i> Real identity checks</span>
+            <span><i class="ri-checkbox-circle-fill" style="color:#4ade80"></i> Content authenticity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CREATOR TYPES ===== -->
+  <section class="creator-types-section">
+    <div class="container">
+      <!-- Coming Soon Banner -->
+      <div class="coming-soon-banner">
+        <div class="brand-grid-bg"></div>
+        <div class="cs-inner">
+          <div class="cs-top">
+            <div class="cs-live-row">
+              <span class="dot-green"></span>
+              <span class="live-label">Coming Soon</span>
+              <span class="hide-sm" style="color:rgba(255,255,255,0.9);font-size:0.875rem;margin-left:0.5rem">🔥 Exciting Features on the Horizon</span>
+            </div>
+            <button class="btn-roadmap">View Roadmap <i class="ri-arrow-right-line"></i></button>
+          </div>
+          <div class="cs-cards">
+            <div class="cs-card">
+              <div class="cs-icon bg-red-pink"><i class="ri-live-line"></i></div>
+              <h3>Live Streaming</h3>
+              <p>Go live and earn from your streams in real-time</p>
+              <span class="status-badge yellow">Beta Testing</span>
+            </div>
+            <div class="cs-card">
+              <div class="cs-icon bg-purple-pink"><i class="ri-robot-2-line"></i></div>
+              <h3>AI Content Assistant</h3>
+              <p>Generate captions, titles, and content ideas with AI</p>
+              <span class="status-badge pink">Coming Q2 2026</span>
+            </div>
+            <div class="cs-card">
+              <div class="cs-icon bg-orange-amber"><i class="ri-group-line"></i></div>
+              <h3>Collab Marketplace</h3>
+              <p>Find and partner with other creators for collabs</p>
+              <span class="status-badge orange">In Development</span>
+            </div>
+          </div>
+          <p class="cs-note"><i class="ri-information-line"></i> More exciting features coming soon! Stay tuned for updates.</p>
+        </div>
+      </div>
+
+      <div class="section-center" style="margin-top:4rem">
+        <div class="badge-purple-pill">Who We're Building For</div>
+        <h2>Creators We're Looking For</h2>
+        <p>We're building this platform for passionate creators across all niches. If you create content and want to monetize your passion, you belong here.</p>
+      </div>
+
+      <div class="creators-grid">
+        <div class="creator-card"><div class="cc-icon bg-red-pink"><i class="ri-video-line"></i></div><h3>Video Creators</h3><p>YouTubers, TikTokers, vloggers, and video content producers</p><div class="cc-examples">Tutorials, vlogs, reviews, entertainment</div></div>
+        <div class="creator-card"><div class="cc-icon bg-purple-indigo"><i class="ri-music-line"></i></div><h3>Artists &amp; Musicians</h3><p>Digital artists, illustrators, musicians, and performers</p><div class="cc-examples">Art, music, performances, behind-the-scenes</div></div>
+        <div class="creator-card"><div class="cc-icon bg-orange-amber"><i class="ri-book-open-line"></i></div><h3>Educators &amp; Coaches</h3><p>Teachers, fitness coaches, life coaches, and mentors</p><div class="cc-examples">Courses, coaching, workshops, guidance</div></div>
+        <div class="creator-card"><div class="cc-icon bg-green-teal"><i class="ri-gamepad-line"></i></div><h3>Gamers &amp; Streamers</h3><p>Gaming content creators, streamers, and esports personalities</p><div class="cc-examples">Gameplay, streams, tips, community</div></div>
+        <div class="creator-card"><div class="cc-icon bg-blue-cyan"><i class="ri-quill-pen-line"></i></div><h3>Writers &amp; Bloggers</h3><p>Authors, journalists, bloggers, and storytellers</p><div class="cc-examples">Articles, stories, newsletters, essays</div></div>
+        <div class="creator-card"><div class="cc-icon bg-pink-rose"><i class="ri-camera-line"></i></div><h3>Photographers</h3><p>Professional and hobbyist photographers sharing their work</p><div class="cc-examples">Photos, presets, tutorials, portfolios</div></div>
+        <div class="creator-card"><div class="cc-icon bg-amber-orange"><i class="ri-restaurant-line"></i></div><h3>Food &amp; Lifestyle</h3><p>Chefs, food bloggers, lifestyle influencers, and wellness creators</p><div class="cc-examples">Recipes, lifestyle tips, wellness content</div></div>
+        <div class="creator-card"><div class="cc-icon bg-teal-emerald"><i class="ri-lightbulb-line"></i></div><h3>Entrepreneurs</h3><p>Business owners, consultants, and thought leaders</p><div class="cc-examples">Business tips, consulting, expertise sharing</div></div>
+      </div>
+      <div class="section-center" style="margin-top:3rem">
+        <p>Don't see your niche? <strong>We welcome all creators!</strong> If you have an audience and create content, you're exactly who we're looking for.</p>
+        <button class="btn-primary-lg" style="margin-top:1.5rem" onclick="scrollToWaitlist()">Join as Creator</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVENUE SHARE ===== -->
+  <section class="revenue-section">
+    <div class="brand-grid-bg"></div>
+    <div class="container rev-inner">
+      <div class="section-center">
+        <div class="badge-white-pill-sm"><i class="ri-money-dollar-circle-line"></i> Creator Revenue</div>
+        <h2 class="rev-title white">You Keep More.<br><span style="opacity:0.8">Way More.</span></h2>
+        <p style="color:rgba(255,255,255,0.9);font-size:1.125rem;max-width:36rem;margin:0 auto;line-height:1.7">
+          Founding creators keep <strong style="color:#fff">94% of every dollar</strong> they earn. Compare that to what other platforms pocket — and you'll never look back.
+        </p>
+      </div>
+
+      <div class="rev-hero-num">
+        <div class="rev-hero-box white-box">
+          <div class="rev-pct white-pct">94%</div>
+          <div style="color:#fff;font-weight:600;margin-top:0.5rem">Founding Creators Keep</div>
+          <div style="color:rgba(255,255,255,0.65);font-size:0.875rem;margin-top:0.25rem">vs. industry average of ~55–80%</div>
+        </div>
+      </div>
+
+      <div class="rev-compare-grid">
+        <div class="rev-us-card white-card">
+          <span class="rev-you-badge brand">You</span>
+          <div class="rev-platform-row">
+            <div class="rev-icon white-icon"><i class="ri-rocket-line"></i></div>
+            <div>
+              <div style="color:#fff;font-weight:700;font-size:1.125rem">Vibe-Z</div>
+              <div style="color:rgba(255,255,255,0.65);font-size:0.75rem">Founding Creator Rate</div>
+            </div>
+            <div class="rev-pct-num" style="color:#fff">94%</div>
+          </div>
+          <div class="rev-bar-track white-track"><div class="rev-bar-fill white-fill" style="width:94%"></div></div>
+          <p class="rev-note white-note"><i class="ri-checkbox-circle-fill"></i> Only 6% platform fee — the lowest in the industry. Excl. third-party transaction fees.</p>
+        </div>
+
+        <div class="rev-competitors white-comp">
+          <div class="rev-comp-item">
+            <div class="rev-comp-row"><div class="rev-comp-icon white-ci"><i class="ri-newspaper-line"></i></div><span class="rev-comp-name">Substack</span><span class="rev-comp-fee">10% platform fee</span><span class="rev-comp-pct">90%</span></div>
+            <div class="rev-bar-track white-track" style="margin-top:0.5rem"><div class="rev-bar-fill white-fill-60" style="width:90%"></div></div>
+          </div>
+          <div class="rev-comp-item">
+            <div class="rev-comp-row"><div class="rev-comp-icon white-ci"><i class="ri-heart-2-line"></i></div><span class="rev-comp-name">Patreon</span><span class="rev-comp-fee">8–12% platform fee</span><span class="rev-comp-pct">88%</span></div>
+            <div class="rev-bar-track white-track" style="margin-top:0.5rem"><div class="rev-bar-fill white-fill-60" style="width:88%"></div></div>
+          </div>
+          <div class="rev-comp-item">
+            <div class="rev-comp-row"><div class="rev-comp-icon white-ci"><i class="ri-image-line"></i></div><span class="rev-comp-name">OnlyFans</span><span class="rev-comp-fee">20% platform fee</span><span class="rev-comp-pct">80%</span></div>
+            <div class="rev-bar-track white-track" style="margin-top:0.5rem"><div class="rev-bar-fill white-fill-60" style="width:80%"></div></div>
+          </div>
+          <div class="rev-comp-item">
+            <div class="rev-comp-row"><div class="rev-comp-icon white-ci"><i class="ri-live-line"></i></div><span class="rev-comp-name">Twitch</span><span class="rev-comp-fee">50% revenue split</span><span class="rev-comp-pct">50%</span></div>
+            <div class="rev-bar-track white-track" style="margin-top:0.5rem"><div class="rev-bar-fill white-fill-60" style="width:50%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rev-bottom-grid">
+        <div class="rev-comp-card white-comp-card">
+          <div class="rev-comp-row"><div class="rev-comp-icon white-ci"><i class="ri-youtube-line"></i></div><span class="rev-comp-name">YouTube AdSense</span><span class="rev-comp-pct">55%</span></div>
+          <div class="rev-bar-track white-track" style="margin-top:0.75rem"><div class="rev-bar-fill white-fill-60" style="width:55%"></div></div>
+          <p style="color:rgba(255,255,255,0.55);font-size:0.75rem;margin-top:0.75rem">Ad revenue only — no direct fan payments</p>
+        </div>
+        <div class="rev-comp-card white-comp-card">
+          <div class="rev-comp-row"><div class="rev-comp-icon white-ci"><i class="ri-tiktok-line"></i></div><span class="rev-comp-name">TikTok Creator Fund</span><span class="rev-comp-pct">4%</span></div>
+          <div class="rev-bar-track white-track" style="margin-top:0.75rem"><div class="rev-bar-fill white-fill-60" style="width:4%"></div></div>
+          <p style="color:rgba(255,255,255,0.55);font-size:0.75rem;margin-top:0.75rem">Notoriously low RPM, ~$0.02–$0.04 per 1K views</p>
+        </div>
+      </div>
+
+      <div class="rev-callout white-callout">
+        <h3>The Math Is Simple</h3>
+        <p>If you earn <strong style="color:#fff">$5,000/month</strong> on our platform, you take home <strong style="color:#fff">$4,700</strong>.<br>On Twitch? Just <strong style="color:rgba(255,255,255,0.65)">$2,500</strong>. On TikTok? You're working for peanuts.</p>
+        <button class="btn-white-lg" onclick="scrollToWaitlist()"><i class="ri-rocket-line"></i> Claim Your 94% Founding Rate</button>
+        <p style="color:rgba(255,255,255,0.55);font-size:0.75rem;margin-top:1rem">Founding rate locked in for life — only available during early access</p>
+        <p style="color:rgba(255,255,255,0.35);font-size:0.75rem;margin-top:0.25rem">T&amp;Cs apply. Excludes third-party transaction fees.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PLATFORM FEATURES ===== -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <div class="section-center">
+        <div class="badge-purple-pill">Platform Features</div>
+        <h2>Everything You Need<br>To Grow &amp; Earn</h2>
+        <p>Powerful tools designed to help creators build sustainable income streams and meaningful connections with their audience.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feat-card"><div class="feat-icon bg-purple-g"><i class="ri-money-dollar-circle-line"></i></div><h3>Multiple Revenue Streams</h3><p>Earn through subscriptions, pay-per-post, tips, and exclusive content. Diversify your income with flexible monetization options.</p><a href="#" rel="nofollow" class="feat-link">Learn more <i class="ri-arrow-right-line"></i></a></div>
+        <div class="feat-card"><div class="feat-icon bg-pink-g"><i class="ri-vip-crown-line"></i></div><h3>Subscriber Tiers</h3><p>Create multiple membership levels with unique perks and pricing. Reward your most loyal fans with exclusive benefits.</p><a href="#" rel="nofollow" class="feat-link">Learn more <i class="ri-arrow-right-line"></i></a></div>
+        <div class="feat-card"><div class="feat-icon bg-orange-g"><i class="ri-file-list-3-line"></i></div><h3>Content Flexibility</h3><p>Share videos, images, text posts, audio, and more. Choose what's free and what's premium for each piece of content.</p><a href="#" rel="nofollow" class="feat-link">Learn more <i class="ri-arrow-right-line"></i></a></div>
+        <div class="feat-card"><div class="feat-icon bg-pink-g"><i class="ri-line-chart-line"></i></div><h3>Real-Time Analytics</h3><p>Track your earnings, subscriber growth, and content performance with detailed insights and actionable metrics.</p><a href="#" rel="nofollow" class="feat-link">Learn more <i class="ri-arrow-right-line"></i></a></div>
+        <div class="feat-card"><div class="feat-icon bg-orange-g"><i class="ri-chat-heart-line"></i></div><h3>Direct Fan Connection</h3><p>Build genuine relationships through comments, DMs, polls, and community posts. Your audience, your rules.</p><a href="#" rel="nofollow" class="feat-link">Learn more <i class="ri-arrow-right-line"></i></a></div>
+        <div class="feat-card"><div class="feat-icon bg-purple-g"><i class="ri-shield-check-line"></i></div><h3>Secure Payments</h3><p>Fast, secure payouts with transparent fees. Get paid on time, every time, with industry-leading payment protection.</p><a href="#" rel="nofollow" class="feat-link">Learn more <i class="ri-arrow-right-line"></i></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STARTUP SUPPORT ===== -->
+  <section class="startup-support brand-section">
+    <div class="brand-grid-bg"></div>
+    <div class="container-sm ss-inner">
+      <div class="section-center white-section-center">
+        <div class="badge-white-pill"><i class="ri-heart-fill"></i> Built by Creators, for Creators</div>
+        <h2>We're Just Getting Started</h2>
+        <p>As a young startup, we're building this platform with passion and dedication to empower creators like you. Every creator who joins, every piece of feedback, and every success story helps us improve and grow. We're in this together! 🚀</p>
+      </div>
+      <div class="ss-cards">
+        <div class="ss-card brand-card"><div class="ss-icon ss-icon-white"><i class="ri-feedback-line"></i></div><h3>Your Voice Matters</h3><p>We actively listen to creator feedback and implement features you need</p></div>
+        <div class="ss-card brand-card"><div class="ss-icon ss-icon-white"><i class="ri-team-line"></i></div><h3>Growing Together</h3><p>Early supporters get priority access to new features and updates</p></div>
+        <div class="ss-card brand-card"><div class="ss-icon ss-icon-white"><i class="ri-sparkling-line"></i></div><h3>Transparent Journey</h3><p>We share our progress, challenges, and wins openly with our community</p></div>
+      </div>
+      <div class="ss-cta brand-cta">
+        <p>💜 <strong>Thank you for believing in us!</strong> Your support as an early adopter means everything. Together, we're creating a platform where creators truly thrive.</p>
+        <div class="ss-btns">
+          <button class="btn-white-lg" onclick="scrollToWaitlist()">Join as Early Creator</button>
+          <button class="btn-outline-white">Share Feedback</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WAITLIST ===== -->
+  <section class="waitlist" id="waitlist-section">
+    <div class="wl-grid-bg"></div>
+    <div class="container-sm wl-inner">
+      <div class="wl-header">
+        <div class="badge-white-pill"><span class="pulse-white"></span> Limited Early Access</div>
+        <h2>Join the Waitlist for<br>Early Creator Access</h2>
+        <p>Be among the first creators to join our platform. Early members get <strong>priority onboarding</strong>, <strong>exclusive features</strong>, and <strong>founding member perks</strong>.</p>
+        <div class="countdown-wrap">
+          <p class="countdown-label"><i class="ri-rocket-line"></i> Early Access Launches In</p>
+          <div class="countdown-row">
+            <div class="cd-unit"><div class="cd-box"><span id="cd-days">00</span></div><span class="cd-lbl">Days</span></div>
+            <span class="cd-sep">:</span>
+            <div class="cd-unit"><div class="cd-box"><span id="cd-hours">00</span></div><span class="cd-lbl">Hours</span></div>
+            <span class="cd-sep">:</span>
+            <div class="cd-unit"><div class="cd-box"><span id="cd-mins">00</span></div><span class="cd-lbl">Minutes</span></div>
+            <span class="cd-sep">:</span>
+            <div class="cd-unit"><div class="cd-box"><span id="cd-secs">00</span></div><span class="cd-lbl">Seconds</span></div>
+          </div>
+          <p class="cd-note">June 1, 2026 — Early Access Launch Date</p>
+        </div>
+      </div>
+
+      <div id="wl-success" class="wl-success" style="display:none">
+        <div class="success-icon"><i class="ri-check-line"></i></div>
+        <h3>You're on the List! 🎉</h3>
+        <p>Thank you for joining our waitlist! We'll reach out soon with your exclusive early access invitation.</p>
+        <div class="success-note"><i class="ri-mail-check-line"></i> Check your inbox for confirmation</div>
+      </div>
+
+      <form id="waitlist-form" data-readdy-form onsubmit="submitWaitlist(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name <span class="req">*</span></label>
+            <div class="input-wrap"><i class="ri-user-line"></i><input type="text" name="first_name" placeholder="Your first name" required></div>
+          </div>
+          <div class="form-group">
+            <label>Last Name <span class="req">*</span></label>
+            <div class="input-wrap"><i class="ri-user-line"></i><input type="text" name="last_name" placeholder="Your last name" required></div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email Address <span class="req">*</span></label>
+            <div class="input-wrap"><i class="ri-mail-line"></i><input type="email" name="email" placeholder="you@example.com" required></div>
+          </div>
+          <div class="form-group">
+            <label>What Type of Creator Are You? <span class="req">*</span></label>
+            <div class="input-wrap sel-wrap">
+              <i class="ri-user-star-line"></i>
+              <select name="creator_type" required>
+                <option value="">Select your niche...</option>
+                <option>Video Creator</option><option>Artist / Musician</option>
+                <option>Educator / Coach</option><option>Gamer / Streamer</option>
+                <option>Writer / Blogger</option><option>Photographer</option>
+                <option>Food / Lifestyle</option><option>Fitness</option><option>Other</option>
+              </select>
+              <i class="ri-arrow-down-s-line sel-arrow"></i>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>TikTok Followers</label>
+            <div class="input-wrap sel-wrap">
+              <i class="ri-tiktok-line"></i>
+              <select name="tiktok_followers">
+                <option value="">Select range...</option>
+                <option>0 - 1K</option><option>1K - 10K</option><option>10K - 50K</option>
+                <option>50K - 100K</option><option>100K - 500K</option><option>500K - 1M</option>
+                <option>1M+</option><option>I don't have TikTok</option>
+              </select>
+              <i class="ri-arrow-down-s-line sel-arrow"></i>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Instagram Followers</label>
+            <div class="input-wrap sel-wrap">
+              <i class="ri-instagram-line"></i>
+              <select name="instagram_followers">
+                <option value="">Select range...</option>
+                <option>0 - 1K</option><option>1K - 10K</option><option>10K - 50K</option>
+                <option>50K - 100K</option><option>100K - 500K</option><option>500K - 1M</option>
+                <option>1M+</option><option>I don't have Instagram</option>
+              </select>
+              <i class="ri-arrow-down-s-line sel-arrow"></i>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>How did you hear about us?</label>
+          <div class="input-wrap sel-wrap">
+            <i class="ri-question-answer-line"></i>
+            <select name="hear_about_us">
+              <option value="">Select an option...</option>
+              <option>TikTok</option><option>Instagram</option><option>YouTube</option>
+              <option>Twitter / X</option><option>Facebook</option><option>Google Search</option>
+              <option>Friend or Referral</option><option>Newsletter / Email</option>
+              <option>Podcast</option><option>Blog / Article</option><option>Other</option>
+            </select>
+            <i class="ri-arrow-down-s-line sel-arrow"></i>
+          </div>
+        </div>
+        <div id="form-error" class="form-error" style="display:none">
+          <i class="ri-error-warning-line"></i><span id="form-error-msg"></span>
+        </div>
+        <button type="submit" class="btn-submit" id="submit-btn">
+          <span id="submit-label">Join the Waitlist</span>
+          <i class="ri-arrow-right-line" id="submit-icon"></i>
+        </button>
+        <div class="form-perks">
+          <span><i class="ri-shield-check-line" style="color:#22c55e"></i> No spam, ever</span>
+          <span><i class="ri-gift-line" style="color:#a855f7"></i> Founding member perks</span>
+          <span><i class="ri-rocket-line" style="color:#ec4899"></i> Priority access</span>
+        </div>
+      </form>
+
+      <div class="wl-stats">
+        <div class="wl-stat"><div class="wl-val">We're Just Getting Started</div><div class="wl-lbl">Join the Movement</div></div>
+        <div class="wl-stat"><div class="wl-val">Q3 2026</div><div class="wl-lbl">Early Access Launch</div></div>
+        <div class="wl-stat"><div class="wl-val">94%</div><div class="wl-lbl">Founding Creators Keep</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <img src="https://readdy.ai/api/search-image?query=Modern%20creative%20workspace%20with%20content%20creator%20at%20desk%20with%20camera%20equipment%20and%20laptop%2C%20professional%20studio%20setup%20with%20natural%20lighting%20streaming%20through%20windows%2C%20clean%20minimal%20aesthetic%20with%20soft%20purple%20and%20pink%20gradient%20overlay%2C%20inspiring%20creative%20environment%2C%20high%20quality%20lifestyle%20photography%2C%20cinematic%20composition&width=1920&height=1080&seq=cta1&orientation=landscape" alt="Creator workspace" class="cta-bg-img">
+    <div class="cta-overlay"></div>
+    <div class="cta-content">
+      <h2>START EARNING<br>FROM YOUR CONTENT</h2>
+      <p>Join 50,000+ creators building sustainable income.<br>No upfront costs. No hidden fees. Just you and your passion.</p>
+      <button class="cta-btn" onclick="scrollToWaitlist()">
+        <div class="cta-btn-icon"><i class="ri-rocket-line"></i></div>
+        <span>Create Free Account</span>
+        <i class="ri-arrow-right-up-line cta-arrow"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- ===== TRUSTED ===== -->
+  <section class="trusted">
+    <div class="container-md">
+      <div class="section-center">
+        <p class="trusted-sub">Trusted By Industry Leaders</p>
+        <h3>Powered by World-Class Infrastructure</h3>
+      </div>
+      <div class="trusted-logos">
+        <div class="tl-item"><div class="tl-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="Amazon Web Services"></div><div class="tl-badge"><i class="ri-verified-badge-fill" style="color:#f97316"></i> Verified Partner</div></div>
+        <div class="tl-item"><div class="tl-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg" alt="Stripe Payments"></div><div class="tl-badge"><i class="ri-shield-check-fill" style="color:#6366f1"></i> Secure Payments</div></div>
+        <div class="tl-item"><div class="tl-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal"></div><div class="tl-badge"><i class="ri-shield-check-fill" style="color:#0ea5e9"></i> Buyer Protection</div></div>
+      </div>
+      <p class="trusted-note">Your data and payments are protected by industry-leading security standards</p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-startup">
+        <div class="footer-startup-badge"><i class="ri-seedling-line" style="color:#4ade80"></i> Early Stage Startup</div>
+        <p>We're a passionate team building the creator economy of tomorrow. Your support, patience, and feedback as we grow means the world to us. Thank you for being part of our journey! 🙏</p>
+      </div>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="https://public.readdy.ai/ai/img_res/28f622dd-215d-431d-8f03-9f76adf8a1b8.png" alt="Vibe-Z Logo" class="footer-logo">
+          <p>Empowering creators to build sustainable income and meaningful connections with their audience.</p>
+          <div class="social-row">
+            <a href="https://x.com/Vibez_Social" target="_blank" rel="noopener noreferrer"><i class="ri-twitter-fill"></i></a>
+            <a href="https://www.instagram.com/vibez_social/" target="_blank" rel="noopener noreferrer"><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul><li><a href="#">Terms</a></li><li><a href="#">Privacy</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Stay Updated</h4>
+          <div class="footer-newsletter">
+            <input type="email" placeholder="Your email">
+            <button><i class="ri-arrow-right-line"></i></button>
+          </div>
+          <p class="footer-note">We respect your privacy</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Vibe-Z. All rights reserved. • Made with 💜 by the Smuggme LLC family</p>
+        <a href="https://vibe-z.io" target="_blank" rel="noopener noreferrer">Powered by Smuggme LLC</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
